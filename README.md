@@ -32,6 +32,7 @@ sudo apt install git
 ```bash
 git clone https://github.com/jtarrieu/discord_openai.git
 ```
+# Run
 - get inside :
 ```bash
 cd discord_openai
@@ -40,6 +41,11 @@ cd discord_openai
 - Run the container
 ```bash
 sudo docker compose up -d
+```
+# Stop
+- stop the container
+```bash
+sudo docker compose down
 ```
 # Dev
 - track logs
