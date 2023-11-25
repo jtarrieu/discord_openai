@@ -19,11 +19,7 @@ This code provide a simple discord bot that queries the OpenAI API.
 - Add a payment method : https://platform.openai.com/account/billing/payment-methods
 - Generate a token : https://platform.openai.com/api-keys
 - Store that token in [***credentials.py***](https://github.com/jtarrieu/tide_server/blob/main/credentials.py)
-## Docker
-- Install docker : https://docs.docker.com/engine/install/
 
-# Run the bot
+# Fast install
 
-```bash
-docker compose up
-```
+- For the automated install you will need to have your **tokens ready to paste** before runing the following script. You will be asked to enter them manually during the installation.
