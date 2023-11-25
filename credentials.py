@@ -8,6 +8,8 @@ Syntaxes:
     OpenAI token  : GPT_KEY = '<token>'
     Discord token : BOT_TOKEN = '<token>'
 """
-# GPT_KEY='<token>'
-# BOT_TOKEN='<token>'
 
+import os
+
+GPT_KEY = os.getenv('GPT_KEY')
+BOT_TOKEN = os.getenv('BOT_TOKEN')

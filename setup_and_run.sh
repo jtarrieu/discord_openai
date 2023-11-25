@@ -74,11 +74,8 @@ read -p "Enter your OpenAi token: " openai_token
 
 cd $repo_dir
 
-echo '' >> credentials.py
-echo "BOT_TOKEN = '$discord_token'" >> credentials.py
-echo "GPT_KEY = '$openai_token'" >> credentials.py
-cat credentials.py
+export BOT_TOKEN=$discord_token
+export GPT_KEY=$openai_token
 
 # COMPOSING THE CONTAINER
-docker build app
 docker compose up -d
