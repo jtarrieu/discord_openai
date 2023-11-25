@@ -77,6 +77,8 @@ cd $repo_dir
 echo '' >> credentials.py
 echo "BOT_TOKEN = '$discord_token'" >> credentials.py
 echo "GPT_KEY = '$openai_token'" >> credentials.py
+cat credentials.py
 
 # COMPOSING THE CONTAINER
+docker build app
 docker compose up -d

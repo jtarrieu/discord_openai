@@ -35,4 +35,5 @@ def run_discord_bot():
             if user_message[0] == '!':
                 await send_message(message, user_message)
 
+    print(f'Discord token : {BOT_TOKEN}')
     client.run(BOT_TOKEN)
