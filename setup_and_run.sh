@@ -74,6 +74,7 @@ read -p "Enter your OpenAi token: " openai_token
 
 cd $repo_dir
 
+echo '' >> credentials.py
 echo "BOT_TOKEN = '$discord_token'" >> credentials.py
 echo "GPT_KEY = '$openai_token'" >> credentials.py
 

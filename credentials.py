@@ -11,5 +11,3 @@ Syntaxes:
 # GPT_KEY='<token>'
 # BOT_TOKEN='<token>'
 
-
-
