@@ -13,12 +13,12 @@ This code provide a simple discord bot that queries the OpenAI API.
 - Click on the invite and add the bot to your server.
 ## Token
 - Generate a token : Click on *reset token* in the Bot section
-- Store that token somewhere, 
+- **Store the token** 
 ## OpenAI
 - Create an account : https://platform.openai.com/
 - Add a payment method : https://platform.openai.com/account/billing/payment-methods
 - Generate a token : https://platform.openai.com/api-keys
-- Store that token in [***credentials.py***](https://github.com/jtarrieu/tide_server/blob/main/credentials.py)
+- **Store the token**
 ## Docker
 
 - [Install docker](https://docs.docker.com/engine/install/)
@@ -36,5 +36,13 @@ git clone https://github.com/jtarrieu/discord_openai.git
 ```bash
 cd discord_openai
 ```
-- Add the tokens to the **.env** file.
+- Add the tokens to the **.env** file, **don't modify the variables names**.
 - Run the container
+```bash
+sudo docker compose up -d
+```
+# Dev
+- track logs
+```bash
+sudo docker compose logs -f
+```
