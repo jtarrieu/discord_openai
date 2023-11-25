@@ -1,10 +1,11 @@
+# Ask for the tokens
 read -p "Enter your Discord bot token: " discord_token
 read -p "Enter your OpenAi token: " openai_token
 
-cd $repo_dir
+# Permanently set the token as environment variables
+echo "export BOT_TOKEN=$discord_token" >> ~/.bashrc
+echo "export GPT_KEY=$openai_token" >> ~/.bashrc
+source ~/.bashrc
 
-export BOT_TOKEN=$discord_token
-export GPT_KEY=$openai_token
-
-# COMPOSING THE CONTAINER
+# Creating the container
 docker compose up -d
