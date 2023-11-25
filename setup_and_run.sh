@@ -8,4 +8,4 @@ echo "export GPT_KEY=$openai_token" >> ~/.bashrc
 source ~/.bashrc
 
 # Creating the container
-docker compose up -d
+sudo docker compose up -d
