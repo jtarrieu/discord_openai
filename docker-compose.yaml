@@ -8,4 +8,5 @@ services:
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
       - GPT_KEY=${GPT_KEY}
-
+    volumes:
+      - ./src:/app
